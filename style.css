@@ -20,7 +20,7 @@ body {
 }
 section {padding-bottom: 80px}
 .container {
-    width: 1200px; margin-left: auto; margin-right: auto
+    max-width: 1200px; margin-left: auto; margin-right: auto
 }
 .h2title {
     text-transform: uppercase; padding: 50px 0px 30px 0px; font-size: 30px; font-weight: 400
@@ -54,7 +54,7 @@ div.header-list-socials svg , .footer-socials svg{
     display: flex; flex-direction: column; align-items: center;
 }
 .hero-content h1 {
-    text-transform: uppercase; font-size: 100px
+    text-transform: uppercase; font-size: 100px; text-align: center;
 }
 .hero-content p {
     width: 70%; text-align: center; font-size: 24px
@@ -84,6 +84,9 @@ div.header-list-socials svg , .footer-socials svg{
 }
 .aboutus-item-description h3 {
     font-size: 30px; text-transform: uppercase;
+}
+.aboutus-item-description p {
+    text-align-last: justify; text-align: justify
 }
 .aboutus-item-description a {
     color: var(--violetinesne); text-decoration: none;
@@ -205,4 +208,21 @@ small {
 }
 .margin {
     margin: 50px 0
+}
+
+@media screen and (max-width: 1000px) {
+    .header-hero {background: var(--violetinesne); padding: 1000px 0px}
+    .header-list-items {display: none}
+    .aboutus-items {grid-template-columns: 1fr;; margin: 50px}
+    .aboutus-item-photo {border: none}
+    .aboutus-item-photo img {left: 0; top: 0; margin-bottom: 50px}
+    .ourservices-items {grid-template-columns: 1fr 1fr;}
+    .ourservices-item {grid-template-columns: 1fr; text-align: center;}
+    .ourservices-item img {height: 70px; width: 70px; margin: auto; margin-bottom: 50px}
+    .ourservices-item-description p {margin: auto; margin-bottom: 50px; width: 50%; line-height: 30px; margin-top: 25px}
+    .featured-items {grid-template-columns: 1fr;}
+    .card {margin: 0px 50px}
+    .card-image-wrapper {max-width: 800px; height: auto}
+    .ourgallery-images {flex-direction: column; row-gap: 10px; background-color: var(--violetinesne);}
+
 }
